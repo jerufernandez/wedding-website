@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, nofollow">
+    <title>The Wedding of Simple Aiko & Jeru</title>
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E❤️%3C/text%3E%3C/svg%3E">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Playfair+Display:wght@700&family=Great+Vibes&family=UnifrakturMaguntia&display&family=UnifrakturCook:wght@700&family=UnifrakturMaguntia&display&family=UnifrakturCook:wght@700&family=UnifrakturMaguntia&family=Lavishly+Yours&family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    
+    <!-- Libraries for animations and gallery -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.10.3/simple-lightbox.min.css">
+    
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="css/style2.css">
+</head>
+<body>
+
+    <!-- ========================================
+         Header & Navigation
+         ======================================== -->
+    <header>
+        <span id="current-date" class="header-date"></span>
+        <h1 class="newspaper-title"><a href="index.html">The Wedding Post</a></h1>
+        <button id="mobile-menu-toggle" class="mobile-menu-toggle">
+            <span></span><span></span><span></span>
+        </button>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">The Front Page</a></li>
+            <li><a href="revelations.html">Exclusive Revelations</a></li>
+            <li><a href="itinerary.html">A Grand Itinerary</a></li>
+            <li><a href="specifics.html">The Specifics</a></li>
+            <li><a href="rsvp.html">Kindly Respond</a></li>
+        </ul>
+    </nav>
+
+    <!-- ========================================
+         Main Page Content
+         ======================================== -->
+    <main>
+
+        <!-- This section now acts as the container for the animation -->
+        <div id="hero-animation-container">
+            <div class="hero-headline" style="z-index: 2;">
+                <p class="extra-extra">SCOOP OF THE SEASON!!!</p>            
+            </div>
+            <div class="hero-image-container">
+                <img src="images/AUG2168v2.jpg" alt="A grand photo of the Simple & Jeru" id="hero-image">
+            </div>
+        </div>
+
+        <!-- Welcome Message -->
+        <div id="welcome-message" class="content-block fade-in-element">
+            <h2 class="main-headline"><span class="headline-names">Simple Aiko</span> & <span class="headline-names">Jeru</span> to be Wed!</h2>
+            <p class="has-dropcap">At last, the whispers that have rippled through every drawing room may be confirmed. The season's most guarded secret is out: Simple Aiko & Jeru are to be wed. <strong>On the eleventh day of November, in the year of our Lord two thousand and twenty-five</strong>, vows shall be exchanged — a union destined to stand as the crowning jewel of this year's society calendar. The wait is nearly over, dear reader, for the official date of this monumental occasion draws ever closer!</p>
+
+            <!-- UPDATED GRAND COUNTDOWN -->
+            <section class="countdown-container fade-in-element">
+                <h2 class="countdown-title">The <span class="fancy-word">Grand</span> Countdown</h2>
+                <div id="countdown-timer">
+                    <!-- Timer units are dynamically inserted by script.js -->
+                </div>
+            </section>
+
+            <!-- Teasers for other pages -->
+            <section class="page-teasers fade-in-element">
+                <a href="revelations.html" class="teaser-card">
+                    <h3>Exclusive Revelations</h3>
+                    <p class="has-dropcap">The full details of their romance, including a cliffside proposal!</p>
+                    <span>Explore Their Story &rarr;</span>
+                </a>
+                <a href="itinerary.html" class="teaser-card">
+                    <h3>A Grand Itinerary</h3>
+                    <p class="has-dropcap">A leaked schedule of the day's most anticipated events—from the sacred ceremony to the after-hours soirée!</p>
+                    <span>View the Schedule &rarr;</span>
+                </a>
+                <a href="specifics.html" class="teaser-card">
+                    <h3>The Specifics</h3>
+                    <p class="has-dropcap">Everything a guest of great taste must know: from dress code to directions and all other necessary particulars.</p>
+                    <span>Get the Details &rarr;</span>
+                </a>
+                <a href="rsvp.html" class="teaser-card">
+                    <h3>Kindly Respond</h3>
+                    <p class="has-dropcap">Your presence is requested. Read on for the proper method to confirm your attendance.</p>
+                    <span>Confirm Attendance &rarr;</span>
+                </a>
+            </section>
+
+        </div>
+
+
+    </main>
+
+
+    <!-- ========================================
+         Footer
+         ======================================== -->
+    <footer>
+        <p>
+            <em>A Fictional Masthead for a Real Celebration. Established 2025.</em><br>
+            Any resemblance to actual publications is purely coincidental and intended for celebratory purposes only.
+            <br>
+        </p>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top-btn" title="Back to Top">&uarr;</button>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.10.3/simple-lightbox.min.js"></script>
+    
+    <!-- GSAP Animation Platform -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+    
+    <!-- Main Script -->
+    <script src="js/script2.js"></script>
+</body>
+</html>
+

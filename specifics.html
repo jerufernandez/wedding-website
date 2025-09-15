@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, nofollow">
+    <title>The Wedding of Simple Aiko & Jeru</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Playfair+Display:wght@700&family=Great+Vibes&family=UnifrakturMaguntia&display&family=UnifrakturCook:wght@700&family=UnifrakturMaguntia&display&family=UnifrakturCook:wght@700&family=UnifrakturMaguntia&family=Lavishly+Yours&family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E❤️%3C/text%3E%3C/svg%3E">
+    
+    <!-- Libraries for animations and gallery -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.10.3/simple-lightbox.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="css/style2.css">
+</head>
+
+<body>
+
+    <!-- ========================================
+         Header & Navigation
+         ======================================== -->
+    <header>
+        <span id="current-date" class="header-date"></span>
+        <h1 class="newspaper-title"><a href="index.html">The Wedding Post</a></h1>
+        <button id="mobile-menu-toggle" class="mobile-menu-toggle">
+            <span></span><span></span><span></span>
+        </button>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">The Front Page</a></li>
+            <li><a href="revelations.html">Exclusive Revelations</a></li>
+            <li><a href="itinerary.html">A Grand Itinerary</a></li>
+            <li><a href="specifics.html">The Specifics</a></li>
+            <li><a href="rsvp.html">Kindly Respond</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <div class="content-block fade-in-element">
+            <h2>DISPATCHES FOR THE DISCERNING GUEST: Matters of Importance</h2>
+            <p>Rumors have swirled for weeks as to the true nature of this most anticipated affair. At last, we present the necessary particulars to ensure your presence is both comfortable and entirely befitting of the occasion. Pray, read with great attention, for these are the details upon which the success of the day depends.</p>
+        </div>
+        <div class="specifics-grid">
+            <div class="specifics-item">
+                <div class="specifics-icon-wrapper">
+            <img src="/images/icons/children.png" alt="Adult-Only" class="specifics-icon"/>
+                </div>
+                <h3>Children</h3>
+                <p>We graciously request this be an <strong>adult-only affair</strong>. We adore the younger generation, of course, but for this occasion, we request that you leave them in the care of a trusted nanny. We trust this discerning request is understood and respected.</p>
+            </div>
+
+            <div class="specifics-item">
+                <div class="specifics-icon-wrapper">
+                    <img src="/images/icons/dress.png" alt="Dress Code" class="specifics-icon"/>
+            </div>
+                <h3>Dress Code</h3>
+                <p>We kindly request formal attire in a neutral palette of <strong>gold, beige, ivory, cream, soft grays, etc</strong>. Ladies are invited to wear elegant dresses, while gentlemen are asked to wear suits that align with this color scheme.</p>
+            </div>
+
+            <div class="specifics-item">
+                <div class="specifics-icon-wrapper">
+                    <img src="/images/icons/hotel.png" alt="Accommodations" class="specifics-icon"/>
+                </div>
+                <h3>Accommodations</h3>
+                <p>For the convenience of our guests, <strong>we recommend making accommodations in advance</strong>. This will ensure a <strong>timely arrival</strong> and a most comfortable and carefree experience as <strong>the day's celebration will carry on well into the evening</strong>.</p>
+         </div>
+
+            <div class="specifics-item">
+                <div class="specifics-icon-wrapper">
+                    <img src="/images/icons/email.png" alt="Email" class="specifics-icon"/>
+                </div>
+                <h3>Email</h3>
+                <p>Should a particular require a discreet response, we have established a channel for private correspondence. Kindly direct your digital dispatches to <strong>jeruandsimpletiestheknot@gmail.com</strong>. We appreciate your discretion in all matters of great importance.</p>
+            </div>
+
+            <div class="specifics-item">
+                <div class="specifics-icon-wrapper">
+                    <img src="/images/icons/gift.png" alt="Gifts" class="specifics-icon"/>
+                </div>
+                <h3>Gifts</h3>
+                <p>Your presence is the only gift we desire. For those who feel compelled to give, a wishing well will be available at the reception. A QR code for digital contributions will also be provided on your invitation and on the day of the event.</p>
+            </div>
+        </div>
+
+        <!-- The Locale Section -->
+        <section class="locale-section fade-in-element">
+            <h2><a href="https://www.antoniosrestaurant.ph/antonios-restaurant">Antonio's Restaurant: The Seat of This Great Occasion</a></h2>
+            <p>The day's events shall unfold at a locale of exceptional repute, long celebrated for its fine cuisine and sublime atmosphere.</p>
+            <span><strong>Address:</strong> Purok 138, Barangay Neogan, Tagaytay City</span>
+            <div id="interactive-map"></div>
+        </section>
+
+        <!-- Teasers for other pages -->
+        <section class="page-teasers fade-in-element">
+
+            <a href="rsvp.html" class="teaser-card">
+                <h3>Kindly Respond</h3>
+                <p class="has-dropcap">Your presence is requested. Read on for the proper method to confirm your attendance.</p>
+                <span>Confirm Attendance &rarr;</span>
+            </a>
+            <a href="revelations.html" class="teaser-card">
+                <h3>Exclusive Revelations</h3>
+                <p class="has-dropcap">The full details of their romance, including a cliffside proposal!</p>
+                <span>Explore Their Story &rarr;</span>
+            </a>
+            <a href="itinerary.html" class="teaser-card">
+                <h3>A Grand Itinerary</h3>
+                <p class="has-dropcap">A leaked schedule of the day's most anticipated events—from the sacred ceremony to the after-hours soirée!</p>
+                <span>View the Schedule &rarr;</span>
+            </a>
+            <a href="index.html" class="teaser-card">
+                <h3>Return to the Front Page</h3>
+                <p class="has-dropcap"> A brief summary of the day's breaking news and a live countdown to the ceremony.</p>
+                <span>Read the Headlines &rarr;</span>
+            </a>
+        </section>
+
+
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>
+            <em>A Fictional Masthead for a Real Celebration. Established 2025.</em><br>
+            Any resemblance to actual publications is purely coincidental and intended for celebratory purposes only.
+            <br>
+        </p>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top-btn" title="Back to Top">&uarr;</button>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.10.3/simple-lightbox.min.js"></script>
+    
+    <!-- Main Script -->
+    <script src="js/script.js"></script>
+
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+
+        const venueCoordinates = [14.100182375847147, 120.89434867139792];
+
+        // 1. Create the map and set its view
+        const map = L.map('interactive-map').setView(venueCoordinates, 14);
+
+        // 2. Add the map's background tiles (from OpenStreetMap)
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+        }).addTo(map);
+
+        // 3. Add a marker for the venue
+        L.marker(venueCoordinates).addTo(map)
+            .bindPopup("<h4><strong>Antonio's Restaurant</strong></h4>Our celebration starts here!")
+            .openPopup();
+    });
+    </script>
+
+</body>
+</html>

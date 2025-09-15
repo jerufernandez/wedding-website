@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, nofollow">
+    <title>The Wedding of Simple Aiko & Jeru</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Playfair+Display:wght@700&family=Great+Vibes&family=UnifrakturMaguntia&display&family=UnifrakturCook:wght@700&family=UnifrakturMaguntia&display&family=UnifrakturCook:wght@700&family=UnifrakturMaguntia&family=Lavishly+Yours&family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E❤️%3C/text%3E%3C/svg%3E">
+
+    <!-- Libraries for animations and gallery -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.10.3/simple-lightbox.min.css">
+    
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="css/style2.css">
+</head>
+<body>
+
+    <!-- ========================================
+         Header & Navigation
+         ======================================== -->
+    <header>
+        <span id="current-date" class="header-date"></span>
+        <h1 class="newspaper-title"><a href="index.html">The Wedding Post</a></h1>
+        <button id="mobile-menu-toggle" class="mobile-menu-toggle">
+            <span></span><span></span><span></span>
+        </button>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">The Front Page</a></li>
+            <li><a href="revelations.html">Exclusive Revelations</a></li>
+            <li><a href="itinerary.html">A Grand Itinerary</a></li>
+            <li><a href="specifics.html">The Specifics</a></li>
+            <li><a href="rsvp.html">Kindly Respond</a></li>
+        </ul>
+    </nav>
+    
+    <!-- Main Content -->
+    <main>
+        <div class="content-block fade-in-element">
+            <h2>The Day's Grand Itinerary</h2>
+            <p>The news of the forthcoming nuptials has set all of high society abuzz! While the final details remain under a veil of utmost secrecy, a preliminary schedule of the day's exclusive events has been leaked for your perusal.</p>
+        </div>
+
+        <!-- Vertical Timeline -->
+        <div class="timeline fade-in-element">
+            <!-- Event 1: Arrival -->
+            <div class="timeline-item" data-modal-target="#arrival-modal">
+                <div class="timeline-content">
+                    <img src="images/icons/arrival.png" alt="" class="timeline-icon">
+                    <div class="event-details">
+                        <h3>Guest Arrival</h3>
+                        <p class="event-time">3:30 in the Afternoon</p>
+                        <p class="event-location">Antonio's Restaurant, Grand Entrance</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Event 2: Ceremony -->
+            <div class="timeline-item" data-modal-target="#ceremony-modal">
+                <div class="timeline-content">
+                    <img src="images/icons/ceremony.png" alt="" class="timeline-icon">
+                    <div class="event-details">
+                        <h3>The Ceremony</h3>
+                        <p class="event-time">4:00 in the Afternoon</p>
+                        <p class="event-location">The Cabana</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Event 3: Cocktails -->
+            <div class="timeline-item" data-modal-target="#cocktails-modal">
+                <div class="timeline-content">
+                    <img src="images/icons/cocktails.png" alt="" class="timeline-icon">
+                    <div class="event-details">
+                        <h3>Cocktail Hour</h3>
+                        <p class="event-time">5:00 in the Afternoon</p>
+                        <p class="event-location">The Cabana & Garden</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Event 4: Reception -->
+            <div class="timeline-item" data-modal-target="#reception-modal">
+                <div class="timeline-content">
+                    <img src="images/icons/reception.png" alt="" class="timeline-icon">
+                    <div class="event-details">
+                        <h3>The Grand Dinner</h3>
+                        <p class="event-time">6:00 in the Evening</p>
+                        <p class="event-location">The Chef's Private Dining Salon</p>
+                    </div>
+                </div>
+            </div>
+             <!-- Event 5: Celebration -->
+             <div class="timeline-item" data-modal-target="#celebration-modal">
+                <div class="timeline-content">
+                    <img src="images/icons/celebration.png" alt="" class="timeline-icon">
+                    <div class="event-details">
+                        <h3>The Soirée</h3>
+                        <p class="event-time">8:00 in the Evening and Beyond</p>
+                        <p class="event-location">The Garden</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+                    <!-- Teasers for other pages -->
+            <section class="page-teasers fade-in-element">
+
+                <a href="specifics.html" class="teaser-card">
+                    <h3>The Specifics</h3>
+                    <p class="has-dropcap">Everything a guest of great taste must know: from dress code to directions and all other necessary particulars.</p>
+                    <span>Get the Details &rarr;</span>
+                </a>
+                <a href="rsvp.html" class="teaser-card">
+                    <h3>Kindly Respond</h3>
+                    <p class="has-dropcap">Your presence is requested. Read on for the proper method to confirm your attendance.</p>
+                    <span>Confirm Attendance &rarr;</span>
+                </a>
+                <a href="revelations.html" class="teaser-card">
+                    <h3>Exclusive Revelations</h3>
+                    <p class="has-dropcap">The full details of their romance, including a cliffside proposal!</p>
+                    <span>Explore Their Story &rarr;</span>
+                </a>
+                <a href="index.html" class="teaser-card">
+                    <h3>Return to the Front Page</h3>
+                    <p class="has-dropcap"> A brief summary of the day's breaking news and a live countdown to the ceremony.</p>
+                    <span>Read the Headlines &rarr;</span>
+                </a>
+            </section>
+
+        </div>
+
+    </main>
+
+    <!-- Hidden Modals -->
+    <div id="arrival-modal" class="modal-overlay">
+        <div class="modal-content">
+            <button class="modal-close">&times;</button>
+            <h3>Guest Arrival</h3>
+            <p class="has-dropcap">The carriages will arrive, and the most distinguished of guests shall be received. Valets stand ready to attend to your transport with the highest consideration, ensuring your passage is without inconvenience. As you disembark, you shall be directed to the main salon, where a seat awaits you. Take a moment to compose yourself and exchange pleasantries with fellow distinguished guests before the day's great events commence.</p>
+        </div>
+    </div>
+    <div id="ceremony-modal" class="modal-overlay">
+        <div class="modal-content">
+            <button class="modal-close">&times;</button>
+            <h3>The Ceremony</h3>
+            <p class="has-dropcap">Under the shelter of the magnificent cabana, amidst a verdant backdrop, the sacred vows shall be exchanged. A hush will fall over the company as the happy pair commits their souls one to another. This most solemn and beautiful moment is not merely a formality but a true testament to their enduring devotion.</p>
+        </div>
+    </div>
+    <div id="cocktails-modal" class="modal-overlay">
+        <div class="modal-content">
+            <button class="modal-close">&times;</button>
+            <h3>Cocktail Hour</h3>
+            <p class="has-dropcap">Following the exchange of vows, the festivities shall begin in earnest. The cabana shall transform into a haven of leisurely indulgence, positioned most conveniently alongside the verdant garden. Refreshments of the finest quality shall be served, a selection most suitable for a celebration of this magnitude. In a further stroke of modern ingenuity, photographers await your well-wishes for the happy couple, and a musical duo of accomplished string and wind instruments shall provide a most delightful ambiance.
+            </p>
+        </div>
+    </div>
+    <div id="reception-modal" class="modal-overlay">
+        <div class="modal-content">
+            <button class="modal-close">&times;</button>
+            <h3>The Grand Dinner</h3>
+            <p class="has-dropcap">The grandest of feasts awaits! A private dining salon has been reserved for the assembly, where a menu of unparalleled quality, personally overseen by a culinary master, shall be presented. Toasts shall be raised, anecdotes exchanged, and a celebration of love and companionship will unfold.</p>
+        </div>
+    </div>
+    <div id="celebration-modal" class="modal-overlay">
+        <div class="modal-content">
+            <button class="modal-close">&times;</button>
+            <h3>The Soirée</h3>
+            <p class="has-dropcap">The evening's revelry shall continue in the moonlight-bathed garden. The air will be filled with the most current of tunes, beckoning all to join in a lively dance. This is the moment for all to shed their cares and rejoice in a night of jubilant celebration.</p>
+        </div>
+    </div>
+
+    <!-- ========================================
+         Footer
+         ======================================== -->
+    <footer>
+        <p>
+            <em>A Fictional Masthead for a Real Celebration. Established 2025.</em><br>
+            Any resemblance to actual publications is purely coincidental and intended for celebratory purposes only.
+            <br>
+        </p>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top-btn" title="Back to Top">&uarr;</button>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.10.3/simple-lightbox.min.js"></script>
+    
+    <!-- GSAP Animation Platform -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+    
+    <!-- Main Script -->
+    <script src="js/script2.js"></script>
+</body>
+</html>

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, nofollow">
+    <title>The Wedding of Simple Aiko & Jeru</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Playfair+Display:wght@700&family=Great+Vibes&family=UnifrakturMaguntia&display&family=UnifrakturCook:wght@700&family=UnifrakturMaguntia&display&family=UnifrakturCook:wght@700&family=UnifrakturMaguntia&family=Lavishly+Yours&family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E❤️%3C/text%3E%3C/svg%3E">
+    
+    <!-- Libraries for animations and gallery -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.10.3/simple-lightbox.min.css">
+    
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="css/style2.css">
+</head>
+<body>
+
+    <!-- ========================================
+         Header & Navigation
+         ======================================== -->
+    <header>
+        <span id="current-date" class="header-date"></span>
+        <h1 class="newspaper-title"><a href="index.html">The Wedding Post</a></h1>
+        <button id="mobile-menu-toggle" class="mobile-menu-toggle">
+            <span></span><span></span><span></span>
+        </button>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">The Front Page</a></li>
+            <li><a href="revelations.html">Exclusive Revelations</a></li>
+            <li><a href="itinerary.html">A Grand Itinerary</a></li>
+            <li><a href="specifics.html">The Specifics</a></li>
+            <li><a href="rsvp.html">Kindly Respond</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <div class="content-block fade-in-element">
+            <h2>KINDLY RESPOND</h2>
+            <h3>A Most Urgent Dispatch: Your Answer is Required!</h3>
+            <p class="has-dropcap">Dearest guest, your presence at this momentous occasion is a matter of great importance. We beseech you to <strong>kindly fill out the following</strong> dispatch, so that we may make all the necessary arrangements for your comfort and enjoyment. This is a matter of great formality, and we thank you in advance for your swift reply.</p>
+        </div>
+
+        <!-- RSVP Form -->
+        <form class="rsvp-form fade-in-element" id="rsvp-form">
+            <div class="form-group">
+                <label for="full-name">Full Name(s)</label>
+                <input type="text" id="full-name" name="entry.913409874">
+            </div>
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="entry.1957355546">
+            </div>
+
+            <!-- NEW: Attendance Radio Buttons -->
+            <div class="form-group full-width">
+                <fieldset class="attendance-options">
+                    <legend>Will you be attending?</legend>
+                    <div class="attendance-choice">
+                        <input type="radio" id="attending-yes" name="entry.1504325072" value="Joyfully Accept">
+                        <label for="attending-yes">Joyfully Accept</label>
+                    </div>
+                    <div class="attendance-choice">
+                        <input type="radio" id="attending-no" name="entry.1504325072" value="Regretfully Decline">
+                        <label for="attending-no">Regretfully Decline</label>
+                    </div>
+                </fieldset>
+            </div>
+            
+            <!-- Dietary Requirements Section -->
+            <div class="form-group full-width">
+                 <fieldset class="dietary-options">
+                    <legend>Dietary Requirements</legend>
+                    <div class="checkbox-group">
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="vegetarian" name="entry.660256156" value="Vegetarian">
+                            <label for="vegetarian">Vegetarian</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="gluten-free" name="entry.660256156" value="Gluten-Free">
+                            <label for="gluten-free">Gluten-Free</label>
+                        </div>
+                    </div>
+                    <label for="allergies" class="sr-only">Other allergies or medical conditions</label>
+                    <input type="text" id="allergies" name="entry.2080846579" placeholder="Other (please specify any allergies)">
+                </fieldset>
+            </div>
+
+            <!-- Music Request Section -->
+            <div class="form-group full-width">
+                <label for="song-request">What song is guaranteed to get you on the dance floor?</label>
+                <textarea id="song-request" name="entry.882257804" placeholder="e.g., Dancing Queen by ABBA"></textarea>
+            </div>
+
+            <!--Notes -->
+            <div class="form-group full-width">
+                <label for="message">Message for Simple Aiko and Jeru:</label>
+                <textarea id="message" name="entry.1161635176" placeholder=""></textarea>
+            </div>
+
+            <div class="form-group full-width">
+                <button type="submit" class="submit-btn">Submit Response</button>
+            </div>
+        </form>
+
+    <div id="success-message" style="display: none; text-align: center; margin-top: 40px;">
+        <h3>Thank You!</h3>
+        <p>Your response has been recorded. We can't wait to celebrate with you!</p>
+    </div>
+
+        <hr class="section-divider">
+
+
+        <!-- Teasers for other pages -->
+        <section class="page-teasers fade-in-element">
+
+            <a href="rsvp.html" class="teaser-card">
+                <h3>Kindly Respond</h3>
+                <p class="has-dropcap">Your presence is requested. Read on for the proper method to confirm your attendance.</p>
+                <span>Confirm Attendance &rarr;</span>
+            </a>
+            <a href="revelations.html" class="teaser-card">
+                <h3>Exclusive Revelations</h3>
+                <p class="has-dropcap">The full details of their romance, including a cliffside proposal!</p>
+                <span>Explore Their Story &rarr;</span>
+            </a>
+            <a href="itinerary.html" class="teaser-card">
+                <h3>A Grand Itinerary</h3>
+                <p class="has-dropcap">A leaked schedule of the day's most anticipated events—from the sacred ceremony to the after-hours soirée!</p>
+                <span>View the Schedule &rarr;</span>
+            </a>
+            <a href="index.html" class="teaser-card">
+                <h3>Return to the Front Page</h3>
+                <p class="has-dropcap"> A brief summary of the day's breaking news and a live countdown to the ceremony.</p>
+                <span>Read the Headlines &rarr;</span>
+            </a>
+        </section>
+
+    </main>
+
+    <!-- ========================================
+         Footer
+         ======================================== -->
+    <footer>
+        <p>
+            <em>A Fictional Masthead for a Real Celebration. Established 2025.</em><br>
+            Any resemblance to actual publications is purely coincidental and intended for celebratory purposes only.
+            <br>
+        </p>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top-btn" title="Back to Top">&uarr;</button>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.10.3/simple-lightbox.min.js"></script>
+    
+    <!-- GSAP Animation Platform -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+    
+    <!-- Main Script -->
+    <script src="js/script2.js"></script>
+</body>
+</html>
+
