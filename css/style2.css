@@ -285,6 +285,7 @@ nav a.active::before {
     padding: 5px;
     box-shadow: 0 5px 25px rgba(0, 0, 0, 0.07);
     line-height: 0;
+    will-change: transform, opacity; /* Add this line */
 }
 
 #hero-image {
@@ -302,7 +303,8 @@ nav a.active::before {
     width: 100%;
     z-index: 2;
     text-align: center;
-    padding: 0; 
+    padding: 0;
+    will-change: transform;
 }
 
 .extra-extra {
@@ -328,7 +330,8 @@ nav a.active::before {
 
 
 #welcome-message {
-    padding-top: 40px; 
+    padding-top: 40px;
+    will-change: transform;
 }
 
 
@@ -1196,7 +1199,7 @@ footer {
         padding-top: 30px; /* Less padding on mobile */
     }
     .hero-image-container {
-    min-height: 60vh; /* This line is correct and stays */
+    min-height: 60vh;
     position: relative; /* CRITICAL: This makes it a positioning context */
     }
     #hero-image {
